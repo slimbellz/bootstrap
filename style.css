@@ -1,0 +1,42 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: greenyellow;
+    height: 112px;
+    line-height: 112px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+header nav {
+    float: right !important;
+}
+
+.logo img {
+    margin-top: 30px;
+}
+
+header nav ul li a {
+    padding-right: 30px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.53s ease-in;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+
+
+
