@@ -80,7 +80,7 @@ label #sign-one, label #sign-two {
     }
 
     #logo .imagelogo img {
-        display: none;
+        left: 85%;
     }
 
     nav ul {
@@ -129,13 +129,17 @@ label #sign-one, label #sign-two {
     text-align: center;
     margin: auto;
     padding: 0;
+    object-fit: scale-down;
+    max-width: 100%;
+    height: auto;
 }
 
 .slider, .slider ul,.slider ul li  {
-    height: 710px;
+    height: 654px;
     width: 100%;
     color: white;
     text-align: center;
+    margin: 0px;
 }
 
 .slider h2 {
@@ -180,6 +184,17 @@ label #sign-one, label #sign-two {
 }
 
 .img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("image/img22.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    object-fit: scale-down;
+}
+
+.img3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("image/img02.jpg");
     background-size: 100% 100%;
     background-position: center center;
@@ -187,18 +202,21 @@ label #sign-one, label #sign-two {
     text-align: center;
     margin: auto;
     padding: 0;
-
-
+    object-fit: scale-down;
 }
 
-.img3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("image/img05.jpg");
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    text-align: center;
-    margin: auto;
-    padding: 0;
+@media (max-width: 768px) {
+    .slider, .slider ul,.slider ul li {
+        height: 497px;
+        width: 100%;
+    }
+
+    .slider h2 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 200px;
+        color: yellowgreen;
+    }
 }
 
 
@@ -332,6 +350,16 @@ label #sign-one, label #sign-two {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    #intro .mobile-imagelogo {
+        padding-bottom: 20px;
+    }
+}
+
+/* END OF HOME PAGE */
+
+/* SERVICES */
+
 .feature-area {
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(image/img13.jpg);
     background-position: center;
@@ -457,10 +485,18 @@ label #sign-one, label #sign-two {
     position: relative;
 }
 
+@media only screen and (max-width: 425px) {
+    .single-feature {
+        border: transparent;
+    }
+}
+
+/* END SERVICE PAGE */
+
 /* Product Page */
 
 #projects-body .productbodytxt {
-    padding-top: 100px;
+    padding-top: 10%;
     text-align: center;
 }
 
@@ -527,8 +563,10 @@ label #sign-one, label #sign-two {
 
 
 .img-text-wrapper:hover .subtitle {
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     color: gold;
+    width: 100%;
 }
 
 .img-darken {
@@ -539,11 +577,12 @@ label #sign-one, label #sign-two {
 @media only screen and (max-width: 768px) {
 
     #projects-body .productbodytxt {
-        padding-top: 5%;
+        padding-top: 15%;
     }
 
-    #header .row .logo > img {
-        display: none;
+    #projects-body .portfolio-items-wrapper {
+        overflow: hidden;
+        width: auto;
     }
 
     #projects-body .productbodytxt p {
@@ -624,7 +663,7 @@ label #sign-one, label #sign-two {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 140px 0 0 140px;
+    padding: 9% 0 0 5%;
 }
 
 .contact-heading {
@@ -642,11 +681,12 @@ label #sign-one, label #sign-two {
 
 #contact .contact-items {
     width: 300px;
+    padding: 2%;
+    text-align: center;
 }
 
 #contact .contact-item {
     width: 80%;
-    padding: 20px;
     text-align: center;
     border-radius: 10px;
     padding: 30px;
@@ -687,8 +727,25 @@ label #sign-one, label #sign-two {
     flex-direction: column;
     align-items: flex-end;
     top: -600px;
+    padding: 0 5% 5%;
 }
 
+@media (max-width: 768px) {
+
+   .contact .google-map iframe {
+        width: 100%;
+        height: 248px;
+        position: relative;
+        left: 0px;
+        top: 600px;
+        border-radius: 10px;
+    }
+
+    #contact .contact-items {
+        width: 100%;
+    }
+
+}
 /* End of Contact page */
 
 
