@@ -8,11 +8,10 @@
 
 .imagelogo img {
     position: absolute;
-    width: 10%;
-    padding-left: 0;
-    margin-left: 0;
-    top: 8px;
-    left: 5%;
+    width: 17%;
+    padding: 0;
+    margin: 0;
+    left: 2%;
 }
 
 .secondary {
@@ -23,10 +22,38 @@
 
 header {
     height: 100px;
-    line-height: 100px;
     z-index: 1;
     width: 100%;
     position: fixed;
+}
+
+#header .left-nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: all 0.5s ease-in;
+    text-shadow: 2px 2px 4px black;
+}
+
+#header .left-nav h1 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding-left: 15px;
+
+}
+
+#header .left-nav h1 span {
+    color: gold;
+}
+
+#header .left-nav h2 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: gold;
+    padding-left: 20px;
 }
 
 ul {
@@ -37,12 +64,11 @@ ul {
 
 ul li {
     display: inline-block;
-    line-height: 50px;
     margin: 0 15px;
+    line-height: 0px;
 }
 
 header nav ul li a {
-    padding: 5px 0;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -50,7 +76,7 @@ header nav ul li a {
     text-transform: uppercase;
     letter-spacing: .2rem;
     transition: all 0.5s ease-in;
-    text-shadow: 4px 4px 8px black;
+    text-shadow: 2px 2px 4px black;
 }
 
 header nav ul li a:hover {
@@ -80,7 +106,8 @@ label #sign-one, label #sign-two {
     }
 
     #logo .imagelogo img {
-        left: 85%;
+        left: 60%;
+        width: 40%;
     }
 
     nav ul {
@@ -116,6 +143,9 @@ label #sign-one, label #sign-two {
     #res-menu:checked ~ label #sign-two {
         display: block;
     }
+    #header .left-nav a {
+        float: right;
+    }
 }
 
 /* End of Header, Navbar */
@@ -147,6 +177,7 @@ label #sign-one, label #sign-two {
     font-weight: bold;
     margin-top: 270px;
     color: yellowgreen;
+    letter-spacing: 3px;
 }
 
 .slider p {
@@ -184,7 +215,7 @@ label #sign-one, label #sign-two {
 }
 
 .img2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("image/img22.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("image/ovencute3.jpg");
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -230,6 +261,7 @@ label #sign-one, label #sign-two {
 .intro-area h2 {
     color: #818181;
     letter-spacing: 0.165em;
+    text-shadow: 1.5px 1.5px 3px black;
 }
 
 .sub-heading {
@@ -332,6 +364,7 @@ label #sign-one, label #sign-two {
     text-transform: uppercase;
     margin-bottom: 15px;
     letter-spacing: 0.025em;
+    text-shadow: 1.5px 1.5px 3px black;
 }
 
 .intro-block p {
@@ -642,8 +675,7 @@ label #sign-one, label #sign-two {
         font-weight: 600;
         color: transparent;
     }
-    
-    
+        
     .img-text-wrapper:hover .subtitle {
         font-weight: 600;
         color: gold;
@@ -661,18 +693,19 @@ label #sign-one, label #sign-two {
 
 #contact .contact {
     flex-direction: column;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 9% 0 0 5%;
+    max-width: 1200px;
+    padding-top: 60px;
 }
 
 .contact-heading {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .2rem;
     color: greenyellow;
+    text-shadow: 2px 2px 4px black;
 }
 
 .contact-heading span {
@@ -721,30 +754,26 @@ label #sign-one, label #sign-two {
     font-weight: 500;
 }
 
-.contact .google-map {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    top: -600px;
-    padding: 0 5% 5%;
+.contact .google-map iframe {
+    border-radius: 10px;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
 
-   .contact .google-map iframe {
-        width: 100%;
-        height: 248px;
-        position: relative;
-        left: 0px;
-        top: 600px;
-        border-radius: 10px;
+@media (min-width: 768px) {
+
+    .contact .google-map iframe {
+        position: absolute;
+        top: 200px;
+        left: 600px;
+        width: 600px;
     }
 
-    #contact .contact-items {
-        width: 100%;
+    #contact .front-view1 img {
+        position: absolute;
+        top: 700px;;
+        left: 600px;
     }
-
 }
 /* End of Contact page */
 
