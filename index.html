@@ -4,7 +4,10 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!--font awesome js-->
+    <script src="js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <title>Shadrab</title>
     <link rel="shortcut icon" href="image\shadrablogo_edited.gif">
@@ -12,7 +15,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
 
     <!-- Popper JS -->
     <script src="caroufredsel.js"></script>
@@ -23,11 +26,31 @@
 </head>
 <body>
     <!--Header, Navbar-->
+<!--    <header id="header">
+        <nav class="left-nav">
+            <a class="navbar-brand" href="index.html">
+                <h1><span>S</span>hadrab</h1>
+                <h2>Confectionaries Limited</h2>
+            </a>
+            <input type="checkbox" id="res-menu">
+            <label for="res-menu">
+                <i class="fa fa-bars" id="sign-one"></i>
+                <i class="fa fa-times" id="sign-two"></i>
+            </label>
+            <ul style="padding-top: 35px;" class="ml-auto left-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">our Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+--->
     <header id="header">
         <div class="left-nav">
             <a href="index.html" class="shadrab">
                 <h1><span>S</span>hadrab</h1>
-                <h2>Confectionaries</h2>
+                <h2>Confectionaries Limited</h2>
             </a>
         </div>
         <nav>
@@ -39,7 +62,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html">products</a></li>
                 <li><a href="contact.html">Contact</a></li>   
             </ul>
         </nav>
@@ -153,27 +176,24 @@
     <!--Footer-->
     <section id="footer">
         <div id="productsfooter" class="footer container">
-            <div class="brand"><h1><Span>S</Span>hadrab</h1></div>
-            <h2>Confectionaries</h2>
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="#"><img src="image\iconfacebook.png"></a>
-                </div>
-                <div class="social-item">
-                    <a href="#"><img src="image\iconwhatsapp.png"></a>
-                </div>
-                <div class="social-item">
-                    <a href="#"><img src="image\insticon.png"></a>
-                </div>
-                <div class="social-item">
-                    <a href="#"><img src="image\icontwitter.png"></a>
+            <div class="container-fluid info p-3">
+                <div class="row">
+                    <div class="col d-flex justify-content-between align-itmes-baseline flex-wrap">
+                        <div class="info-icons p-2">
+                            <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-3x"></i></a>
+                            <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-3x"></i></a>
+                            <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-3x"></i></a>
+                        </div>
+                        <div class="brand"><h1><Span>S</Span>hadrab</h1><br><h2>Confectionaries Limited</h2></div>
+                        <h2 class="primary-color p-2 text-uppercase">&copy;copyright 2020</h2>
+                    </div>
                 </div>
             </div>
-            <p>Copyright © 2020 Shadrab Confectionaries Limited</p>
         </div>
     </section>
     <!--End of Footer-->
-
+    <!--bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
